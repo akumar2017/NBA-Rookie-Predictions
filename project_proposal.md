@@ -2,7 +2,7 @@
 
 by Akash Kumar (ajk279) and Pranav Darbha (pd353)
 
-Research Question: Can we predict the performance of an NBA Rookie three years down the line using their statistics from the rookie season?
+Research Question: Can we predict the performance of an NBA player three years down the line using their statistics from the rookie season?
 
 In the annual NBA Draft, 60 players from American universities and other leagues around the world are chosen in the hope that they can be strong players in the world's most competitive basketball league. Many more are signed as undrafted free agents. For each pick, teams spend thousands of hours scouting prospects, hoping that they can find the player with the right fit who will succeed in their team's environment. These players then spend their first year in a high-pressure environment, learning on the job. The volatility of the rookie season can make it difficult to predict how a player will perform further into their NBA career. There are those who succeeded in their first taste of the NBA and never looked back like LeBron James. However, there are many at the opposite end of the spectrum like 2013-14 Rookie of the Year Michael Carter-Williams who has continually regressed since that first year.
 
