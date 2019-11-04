@@ -20,7 +20,7 @@ def get_rookie_advanced_stats(year, rookie_names):
             stats_dict[total['name']] = total
     return stats_dict
 
-df = pd.DataFrame(columns=['Rookie Year', 'Name', 'rpts', 'rrebs', 'rasts', 'rstls', 'rblks', 'rto', 'rfg%', 'rft%', 'r3fg%', 'rWS/48', 'rBPM', 'rPER', 'rTS%', 'rVORP', 'pts', 'rebs', 'asts', 'stls', 'blks', 'to', 'fg%', 'ft%', '3fg%', 'WS/48', 'BPM', 'PER', 'TS%', 'VORP'])
+df = pd.DataFrame(columns=['Rookie Year', 'Name', 'rpts', 'rrebs', 'rasts', 'rstls', 'rblks', 'rto', 'rmin', 'rgamp', 'rgams', 'rfg%', 'rft%', 'r3fg%', 'rWS/48', 'rBPM', 'rPER', 'rTS%', 'rVORP', 'pts', 'rebs', 'asts', 'stls', 'blks', 'to', 'fg%', 'ft%', '3fg%', 'WS/48', 'BPM', 'PER', 'TS%', 'VORP'])
 
 rookies = {} #dictionary, keys = year, value = list of rookie dictionaries (keys = columns, values = field)
 for i in range(2010, 2017):
@@ -47,6 +47,9 @@ for i in range(2010, 2017):
         stats['rstls'] = total['steals']/total['minutes_played'] * 36
         stats['rblks'] = total['blocks']/total['minutes_played'] * 36
         stats['rtos'] = total['turnovers']/total['minutes_played'] * 36
+        stats['rmin'] = total['minutes_played']
+        stats['rgamp'] = total['games_played']
+        stats['rgams'] = total['games_started']
         stats['rfg%'] = total['made_field_goals']/total['attempted_field_goals']
         stats['r3fg%'] = 0
         if not total['attempted_three_point_field_goals'] == 0:
